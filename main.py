@@ -1,9 +1,4 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-from flask import Flask, Response, request
+from flask import *
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
@@ -11,13 +6,13 @@ app = Flask(__name__)
 CORS(app)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-name = "Stack Notify"
+app_name = "Stack Notify Admin"
 
 
 @app.route('/')
 @cross_origin()
 def index():
-    return f"<h1> Welcome to {name} your highness </h1>"
+    return render_template('index.html', app_name=app_name)
 
 
 if __name__ == '__main__':
