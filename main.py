@@ -13,10 +13,12 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 name = "Stack Notify"
 
+
 @app.route('/')
 @cross_origin()
 def index():
     return f"<h1> Welcome to {name} your highness </h1>"
+
 
 if __name__ == '__main__':
     app.run(host="192.168.0.102", port=3200)
