@@ -22,5 +22,3 @@ def index():
 
 if __name__ == '__main__':
     app.run(host="192.168.0.102", port=3200)
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

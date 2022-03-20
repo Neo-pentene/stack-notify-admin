@@ -1,1 +1,12 @@
+pip~=22.0.4
+wheel~=0.37.1
+cryptography~=36.0.2
+MarkupSafe~=2.1.1
+Werkzeug~=2.0.3
+Jinja2~=3.0.3
+click~=8.0.4
+itsdangerous~=2.1.1
+six~=1.16.0
+pycparser~=2.21
 Flask~=2.0.3
+setuptools~=58.1.0
