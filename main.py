@@ -14,6 +14,11 @@ app_name = "Stack Notify Admin"
 def index():
     return render_template('index.html', app_name=app_name)
 
+@app.route('/login')
+@cross_origin()
+def login():
+    return request.args.to_dict()
+
 
 if __name__ == '__main__':
     app.run(host="192.168.0.102", port=3200)
